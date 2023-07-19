@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bng"
+    android:id="@+id/linear"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="301dp"
+        android:layout_height="230dp"
+        android:layout_marginBottom="34dp"
+        app:srcCompat="@drawable/fg"
+        android:contentDescription="@string/todo" />
+
+
+    <EditText
+        android:id="@+id/edtWeight"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="Weight"
+        android:background="#8EEAE3"
+        android:ems="10"
+        android:hint="@string/hint_wt"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#212121" />
+
+    <EditText
+        android:id="@+id/edtHeightFeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#64E1D7"
+        android:autofillHints="Enter Height"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint_htF"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#212121" />
+
+    <EditText
+        android:id="@+id/edtHeightInch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="Enter Height Inch"
+        android:background="#61D8CF"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="@string/hint_htI"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#212121" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#032C32"
+        android:text="@string/calculate_bmi"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="11dp"
+        android:text="@string/result"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
